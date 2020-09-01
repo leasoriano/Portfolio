@@ -38,7 +38,6 @@ html body {
     height: 50px;
     margin-top: 16px;
     margin-left: 30px;
-    float: left;
     /* opacity: 0; */
     /* animation: logo-animate 0.5s linear forwards 8.2s; */
 }
@@ -147,5 +146,74 @@ transition: all 0.2s ease-out;
     z-index: -1;
     /* opacity: 0; */
     /* animation: img-animate 0.5s linear forwards 8s; */
-    
+}
+
+.yellow-box {
+    position: absolute;
+    top: 22%;
+    right: 23%;
+    height: 50%;
+    width: 20%;
+    border: 1px solid #ffb400;
+}
+
+/* Home Details */
+.main-content .details {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    height: 30%;
+    width: 50%;
+}
+
+.details h1.my-name {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background: #151515;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+} 
+
+.details h1.my-name::before {
+    content: attr(data-text);
+    color: #ffb400;
+    position: absolute;
+    left: 94px;
+} 
+
+.details p.info {
+    position: absolute;
+    top: 30%;
+    left: 23.5%;
+    text-transform: uppercase;
+    font-size: 15px;;
+    letter-spacing: 10px;
+    display: inline-block;
+    color: #cccccc;
+    font-family: 'Oswald', sans-serif;
+}
+
+.details span.my-details p {
+    position: absolute;
+    top: 47%;
+    left: 34.5%;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #cccccc;
+    font-family: 'Oswald', sans-serif;
+    background: #151515;
+}
+
+p span.space {
+    position: relative;
+    margin-left: 130px;
 }

@@ -1,5 +1,11 @@
 
-@media (max-width: 830px) {
+@media (max-width: 700px) {
+
+    /*Logo*/
+    .header .logo img {
+        height: 40px;
+        margin-left: 0;
+    }
 
     /*Navigation*/
     .header .menu-icon {
@@ -13,6 +19,7 @@
         right: -500px;
         text-align: center;
         transition: all 0.2s ease-out;
+        background: #2c2c2cf5;
     }
 
     .nav li {
@@ -50,8 +57,44 @@
 
     /*Home Section*/
     .main-content img {
-        width: 100vh;
-        height: 50%;
+        position: fixed;
+        height: 100vh;
+        margin-left: -500px;
     }
+
+    .yellow-box {
+        top: 50%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+        height: 45%;
+        width: 35%;
+    }
+
+    .details h1.my-name {
+        top: 45%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 26px;
+    }
+    .details h1.my-name::before {
+        left: 66px;
+    } 
+
+    .details p.info {
+        top: 39%;
+        left: 25px;
+        background: #151515;
+        font-size: 0.7em;
+    }
+
+    .details span.my-details p {
+        top: 49%;
+        left: 12%;
+        font-size: 0.65em;
+    }
+    p span.space {
+        margin-left: 105px;
+    }
+
      
 }
