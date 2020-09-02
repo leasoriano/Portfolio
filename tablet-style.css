@@ -33,7 +33,7 @@
     }
 
     /*Home Section*/
-    .main-content img {
+    .content img {
         position: fixed;
         height: 100vh;
         margin-left: -350px;
@@ -41,11 +41,11 @@
     }
 
     .yellow-box {
-        top: 50%;
-        left: 53%;
+        top: 47%;
+        left: 23%;
         transform: translate(-50%, -50%);
-        height: 55%;
-        width: 30%;
+        height: 45%;
+        width: 35%;
     }
 
     .details h1.my-name {
@@ -66,12 +66,31 @@
     }
 
     .details span.my-details p {
-        top: 50%;
+        top: 49%;
         left: 20%;
         font-size: 12px;
     }
     p span.space {
         margin-left: 114px;
+    }
+
+    /*Social Media Links*/
+    .social-media {
+        position: relative;
+        top: 75%;
+        left: -115px;
+    }
+    .social-media a {
+        font-size: 11px;
+    }
+    
+     .social-media ul li {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .social-media ul li i {
+        font-size: 11px;
     }
 
 }
