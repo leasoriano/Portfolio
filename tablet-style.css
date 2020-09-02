@@ -42,10 +42,10 @@
 
     .yellow-box {
         top: 47%;
-        left: 23%;
+        left: 19%;
         transform: translate(-50%, -50%);
         height: 45%;
-        width: 35%;
+        width: 28%;
     }
 
     .details h1.my-name {
@@ -64,11 +64,18 @@
         background: #151515;
         font-size: 14px;
     }
+    .details p.info::after {
+        top: 40%;
+    }
 
     .details span.my-details p {
         top: 49%;
         left: 20%;
         font-size: 12px;
+    }
+    .details span.my-details p::before  {
+        top: 50%;
+        left: -75px;
     }
     p span.space {
         margin-left: 114px;
@@ -76,7 +83,7 @@
 
     /*Social Media Links*/
     .social-media {
-        position: relative;
+        position: fixed;
         top: 75%;
         left: -115px;
     }

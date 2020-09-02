@@ -24,6 +24,11 @@
 
     .nav li {
         display: block;
+        padding: 25px;
+    }
+
+    .nav li a {
+        display: block;
     }
 
     .nav a:hover {
@@ -63,11 +68,11 @@
     }
 
     .yellow-box {
-        top: 50%;
-        left: 32%;
+        top: 49%;
+        left: 28%;
         transform: translate(-50%, -50%);
-        height: 45%;
-        width: 35%;
+        height: 43%;
+        width: 30%;
     }
 
     .details h1.my-name {
@@ -104,24 +109,24 @@
         margin-left: 105px;
     }
 
-        /*Social Media Links*/
-        .social-media {
-            position: relative;
-            top: 75%;
-            left: -117px;
-        }
-        .social-media a {
-            font-size: 11px;
-        }
+    /*Social Media Links*/
+    .social-media {
+        position: fixed;
+        top: 75%;
+        left: -117px;
+    }
+    .social-media a {
+        font-size: 11px;
+    }
         
-         .social-media ul li {
-            margin: 5px;
+    .social-media ul li {
+        margin: 5px;
         padding: 5px;
-        }
+    }
         
-        .social-media ul li i {
-            font-size: 10px;
-        }
+    .social-media ul li i {
+        font-size: 10px;
+    }
     
 
      

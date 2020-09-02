@@ -201,6 +201,15 @@ transition: all 0.2s ease-out;
     font-family: 'Oswald', sans-serif;
     background: #151515;
 }
+
+.details p.info::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    width: 20%;
+    border: 1px solid #ffb400;
+}
+
 .details span.my-details p {
     position: absolute;
     top: 45%;
@@ -212,7 +221,71 @@ transition: all 0.2s ease-out;
     background: #151515;
 }
 
+.details span.my-details p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -75px;
+    width: 20%;
+    border: 1px solid #ffb400;
+}
+
 p span.space {
     position: relative;
     margin-left: 130px;
+}
+
+/* Social Media Links */
+.social-media {
+    position: fixed;
+    top: 40%;
+    left: -110px;
+}
+.social-media a {
+    color: #cccccc;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.social-media ul {
+    padding: 0;
+    transition: translate(-270px,0);
+}
+
+ .social-media ul li {
+    display: block;
+    margin: 5px;
+    background: transparent;
+    width: 150px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0; 
+    transition: all 1s;
+}
+
+  .social-media ul li:hover {
+    transform: translate(80px, 0);
+    background: #b98200;
+    transition: all 1.5s;
+} 
+
+.social-media ul li:hover i {
+    background: #cccccc;
+    color: #151515;
+    transform: rotate(360deg);
+    transition: all .5s;
+}
+
+.social-media ul li i {
+    margin-left: 10px;
+    color: #151515;
+    background: #cccccc;
+    padding: 5px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    text-align: center;
+    font-size: 13px;
 }
