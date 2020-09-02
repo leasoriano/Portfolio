@@ -127,7 +127,17 @@
     .social-media ul li i {
         font-size: 10px;
     }
-    
 
-     
+    /* Section Headers */
+    .skills .skills-title h2, .about-title h2, .contact-title h2,
+    .services-title h2, .works-title h2 {
+        margin-left: 120px;
+        font-size: 40px;
+    }
+    .skills-title h2::before, .about h2::before, .contact-title h2::before,
+    .services-title h2::before, .works-title h2::before  {
+    font-size: 65px;
+    top: -40px;
+    left: -90px;
+    }
 }
