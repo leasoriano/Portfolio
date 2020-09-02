@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Do+Hyeon&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Do+Hyeon&family=Poppins:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -38,7 +39,8 @@ html body {
  .header .logo img {
     height: 50px;
     margin-top: 16px;
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .header .logo img:hover{
@@ -290,7 +292,7 @@ p span.space {
     text-transform: uppercase;
     font-weight: 900;  
     font-size: 55px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 150px;
 }
 .skills-title h2::before, .about h2::before, .contact-title h2::before,
@@ -300,7 +302,7 @@ p span.space {
     top: -40px;
     left: -120px;
     font-size: 80px;
-    color: #0000002c;
+    color: #00000044;
 }
 
 .services-title h2, .works-title h2 {
@@ -311,9 +313,6 @@ p span.space {
     color: #dadada3b;
 }
 
-
-
-/*Skills Header*/
 .skills, .services, .about,
 .works, .contact {
     position: relative;
@@ -329,8 +328,286 @@ p span.space {
     top: 70px;
 }
 
-/* Services Header */
 .services, .works {
     background: #151515;
 }
+
+/* Skill Content */
+
+.skills {
+    overflow: hidden;
+}
+
+.skills .dotted-design {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    height: 100%;
+    transform: rotate(-270deg);
+    opacity: 0.05;
+}
+
+.software p {
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #151515;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.software2 p {
+    position: relative;
+    top: 420px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #151515;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+    margin-top: 190px;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    padding: 30px 10px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.skill-box {
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before {
+    width: 35px;
+}
+
+.skill-box:hover .img {
+    transform: translateY(-10px);
+}
+
+.skill-box:hover h3 {
+    opacity: 1;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.skill-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #ffb400;
+    transition: 0.5s;   
+}
+
+.skill-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #ffb400;
+    transition: 0.5s;
+}
+
+.skill-title h3 {
+    color: #151515;
+    font-family: 'Russo One', sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    opacity: 0;
+    font-weight: 500;
+}
+
+.img {
+    width: 90px;
+    height:  90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: rgba(230, 230, 230, 0.692);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color:rgba(100, 100, 100, 0.37);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-icon {
+    position: relative;
+    bottom: 5px;
+    left: 3px;
+    width: 150px;
+    z-index: 2;
+}
+
+/* Services Content */
+.service-box, .service-box2 {
+    width: 30%;
+    height: 40%;
+    position: absolute; 
+    left: 0;
+    top: 250px;
+}
+
+.service-box2 {
+    width: 30.5%;
+    height: 40%;
+    position: absolute; 
+    left: 447px;
+    top: 280px;
+}
+
+.service-box3 {
+    width: 30%;
+    height: 40%;
+    position: absolute; 
+    right: 50px;
+    top: 250px;
+}
+
+.service-box .design {
+    background: #d89802;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 70px; 
+    z-index: 10; /**/
+    text-align: center;
+}
+
+.service-box2 .design {
+    background: #d89802;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 180px;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 70px; 
+    z-index: 10; /**/
+    text-align: center;
+}
+
+.service-box3 .design {
+    background: #d89802;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 255px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 70px; 
+    z-index: 10; /**/
+    text-align: center;
+}
+
+.design-logo {
+    background: #d89802;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: -70px auto 0;
+    border: 10px solid #151515;
+}
+
+.design-logo img {
+    width: 50px;
+    margin-top: 15px;
+    transition: transform 1s;
+}
+
+.design h4 {
+    margin: 20px auto;
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-family: 'Russo One', sans-serif;
+    line-height: 20px;
+    color: #ffe5a7;
+}
+
+.design p {
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    letter-spacing: 2px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffe5a7;
+}
+
+.service-box:hover .design, 
+.service-box2:hover .design,
+ .service-box3:hover .design {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px -7px #b17d04;
+    transition: transform 0.8s;
+}
+
+.service-box:hover img, .service-box2:hover img, .service-box3:hover img{
+    transform: rotate(360deg);
+}
+
 
